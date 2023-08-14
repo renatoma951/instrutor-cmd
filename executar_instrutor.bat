@@ -7,6 +7,7 @@ echo Opção 1 - Aprender a navegar pelo terminal
 echo Opção 2
 echo Opção 3
 echo Opção 4
+echo Opção 5 - Sair
 
 echo.
 
@@ -18,6 +19,7 @@ if "%opcao%" == "1" goto op1
 if "%opcao%" == "2" goto op2
 if "%opcao%" == "3" goto op3
 if "%opcao%" == "4" goto op4
+if "%opcao%" == "5" goto fim
 
 :op1
 echo Opção 1 selecionada. Abrindo aula_1.bat...
@@ -37,4 +39,5 @@ echo Opção 4 selecionada. Pressione qualquer tecla para encerrar...
 goto fim
 
 :fim
+echo Pressione qualquer tecla para encerrar...
 pause > nul
