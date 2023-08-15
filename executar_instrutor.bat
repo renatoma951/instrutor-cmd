@@ -3,8 +3,8 @@ echo.
 chcp 65001 > nul
 echo Digite o número da opção desejada:
 echo.
-echo Opção 1 - Aprender a navegar pelo terminal
-echo Opção 2
+echo Opção 1 - Aprender comandos: dir, cd, echo, mkdir, rd
+echo Opção 2 - Aprender comandos: rd, md, rmdir, rename, move
 echo Opção 3
 echo Opção 4
 echo Opção 5 - Sair
@@ -27,7 +27,8 @@ call aulas\aula_1.bat
 goto fim
 
 :op2
-echo Opção 2 selecionada. Pressione qualquer tecla para encerrar...
+echo Opção 2 selecionada. Abrindo aula_2.bat...
+call aulas\aula_2.bat
 goto fim
 
 :op3
@@ -39,5 +40,5 @@ echo Opção 4 selecionada. Pressione qualquer tecla para encerrar...
 goto fim
 
 :fim
-echo Pressione qualquer tecla para encerrar...
-pause > nul
+
+
