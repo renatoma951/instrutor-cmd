@@ -5,7 +5,7 @@ echo Digite o número da opção desejada:
 echo.
 echo Opção 1 - Aprender comandos: dir, cd, echo, mkdir, rd
 echo Opção 2 - Aprender comandos: rd, md, rmdir, rename, move
-echo Opção 3
+echo Opção 3 - Aprender comandos: Criar um txt pelo terminal com o output, copy, xcopy, del, ren
 echo Opção 4
 echo Opção 5 - Sair
 
@@ -32,7 +32,8 @@ call aulas\aula_2.bat
 goto fim
 
 :op3
-echo Opção 3 selecionada. Pressione qualquer tecla para encerrar...
+echo Opção 3 selecionada. Abrindo aula_3.bat...
+call aulas\aula_3.bat
 goto fim
 
 :op4
