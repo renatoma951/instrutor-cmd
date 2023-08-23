@@ -3,12 +3,12 @@ echo.
 chcp 65001 > nul
 echo Digite o número da opção desejada:
 echo.
-echo Opção 1 - Aprender comandos: dir, cd, echo, mkdir, rd
-echo Opção 2 - Aprender comandos: rd, md, rmdir, rename, move
-echo Opção 3 - Aprender comandos: Criar um txt pelo terminal com o output, copy, xcopy, del, ren
-echo Opção 4 - Aprender comandos: ping, ipconfig, tracert, netstat  
-echo Opção 5 - Aprender comandos: echo, cmd, date, time, systeminfo, cls, tasklist, taskkill, net   
-echo Opção 6 - Sair
+echo Opção 1 - Aprender a navegar pelo terminal
+echo Opção 2 - Manipulação de arquivos
+echo Opção 3 - criação de arquivos e manipulação
+echo Opção 4 - Comando de redes e serviços  
+echo Opção 5 - Manipulação e informações do sistema   
+echo Opção 6 - Para sair ou Ctrl + c
 
 echo.
 

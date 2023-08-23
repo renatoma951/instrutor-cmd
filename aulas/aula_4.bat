@@ -43,10 +43,15 @@ echo.
 echo Pressione qualquer tecla para executar o comando ping...
 pause > nul
 
+echo.
+echo ping www.google.com
+echo.
 ping www.google.com
 
 echo.
-echo Comando ping executado! Pressione qualquer tecla para continuar...
+echo Comando ping executado! Também podemos usar "ping link do site -t" para ele testar a conexão com o site até ser clicado "control + c". 
+echo.
+echo Pressione qualquer tecla para continuar...
 pause > nul
 cls
 
@@ -76,7 +81,9 @@ cls
 
 echo Pressione qualquer tecla para executar o comando ipconfig...
 pause > nul
-
+echo.
+echo ipconfig
+echo.
 ipconfig
 
 echo.
@@ -111,6 +118,9 @@ cls
 echo Pressione qualquer tecla para executar o comando tracert para o site "www.microsoft.com"...
 pause > nul
 
+echo.
+echo tracert www.microsoft.com
+echo.
 tracert www.microsoft.com
 
 echo.
@@ -148,6 +158,9 @@ cls
 echo Pressione qualquer tecla para executar o comando netstat...
 pause > nul
 
+echo.
+echo netstat
+echo.
 netstat
 
 echo.

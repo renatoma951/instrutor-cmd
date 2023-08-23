@@ -45,7 +45,11 @@ echo Pressione qualquer tecla para Listar arquivos no diretório atual...
 pause > nul
 cls
 
+echo.
+echo dir
+echo.
 dir
+
 echo.
 echo Perceba que, como não passei nenhum caminho, ele rodou no diretório em que você estava quando executou o instrutor.
 echo.
@@ -75,8 +79,29 @@ cls
 echo Vamos ver como usar o comando cd:
 echo.
 echo mudando de diretório:
-echo cd C:\Windows
-cd C:\Windows
+echo.
+echo cd ..
+echo.
+cd ..
+
+echo.
+echo Pressione qualquer tecla para continuar...
+pause > nul
+cls
+
+echo mudando de diretório:
+echo.
+echo cd instrutor-cmd
+echo.
+cd instrutor-cmd
+
+echo.
+echo Pressione qualquer tecla para continuar...
+pause > nul
+cls
+
+echo Também podemos utilizar o comando "cd ..." para voltar duas pastas e mais pontos (".") para voltar mais pastas
+echo E "cd /" para voltar a pasta raíz ("c:" por exemplo)
 
 echo.
 echo Pressione qualquer tecla para continuar...
@@ -99,7 +124,9 @@ echo.
 echo.
 echo Pressione qualquer tecla para ver a saída do comando echo %%CD%%...
 pause > nul
-
+echo.
+echo echo %%CD%%
+echo.
 echo %CD%
 
 echo.
@@ -108,11 +135,11 @@ echo Pressione qualquer tecla para continuar...
 pause > nul
 cls
 
-rem Exemplo do comando "mkdir"
-echo ** Exemplo do comando "mkdir" **
+rem Exemplo do comando "mkdir" ou "md" 
+echo ** Exemplo do comando "mkdir" ou "md" **
 echo.
 
-echo O comando mkdir é usado para criar uma nova pasta no diretório atual do Prompt de Comando, permitindo a organização e estruturação de diretórios e arquivos.
+echo O comando mkdir ou md é usado para criar uma nova pasta no diretório atual do Prompt de Comando, permitindo a organização e estruturação de diretórios e arquivos.
 echo.
 echo Pressione qualquer tecla para ver o help do comando mkdir...
 pause > nul
@@ -128,19 +155,40 @@ echo Pressione qualquer tecla para continuar...
 pause > nul
 cls
 
+echo Pressione qualquer tecla para ver o help do comando md...
+pause > nul
+cls
+
+echo Este é o help do Windows sobre o comando md:
+echo.
+md /?
+
+echo.
+echo.
+echo Pressione qualquer tecla para continuar...
+pause > nul
+cls
+
 echo.
 echo Vamos criar uma pasta chamada "NovaPasta" no diretório atual:
-echo Lembrando que o diretório atual é o "C:\Windows" 
+echo.
+echo.
+
+echo mkdir NovaPasta
+echo ou
+echo md NovaPasta
+
+echo.
 mkdir NovaPasta
 echo.
 echo Pasta criada! Pressione qualquer tecla para continuar...
 pause > nul
 cls
 
-rem Exemplo do comando "rd"
-echo ** Exemplo do comando "rd" **
+rem Exemplo do comando "rd" ou "rmdir"
+echo ** Exemplo do comando "rd" ou "rmdir" **
 echo.
-echo O comando rd é usado no Prompt de Comando para remover uma pasta vazia no diretório atual, permitindo a exclusão de diretórios que não contenham arquivos ou subdiretórios.
+echo O comando rd ou rmdir é usado no Prompt de Comando para remover uma pasta vazia no diretório atual, permitindo a exclusão de diretórios que não contenham arquivos ou subdiretórios.
 echo.
 
 echo Pressione qualquer tecla para ver o help do comando rd...
@@ -156,8 +204,29 @@ echo Pressione qualquer tecla para continuar...
 pause > nul
 cls
 
+echo Pressione qualquer tecla para ver o help do comando rmdir...
+pause > nul
+cls
+echo Este é o help do Windows sobre o comando rmdir:
+echo.
+rmdir /?
+
+echo.
+echo.
+echo Pressione qualquer tecla para continuar...
+pause > nul
+cls
+
 echo Vamos remover a pasta "NovaPasta" que criamos anteriormente:
+echo.
+echo.
+echo rd NovaPasta
+echo ou
+echo rmdir NovaPasta
+echo.
+
 rd NovaPasta
+
 echo.
 echo Pasta removida!
 echo. 

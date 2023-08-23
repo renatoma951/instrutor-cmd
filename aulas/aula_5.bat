@@ -111,16 +111,15 @@ echo Pressione qualquer tecla para continuar...
 pause > nul
 cls
 
-echo Ao exibir a data e apertar a tecla "Enter" será pedida uma nova data!
-echo é só clicar "Enter" novamente que a data continuará igual
+echo Comando não será executado, pois a data do computador pode ser alterada
 echo.
-echo Pressione qualquer tecla para exibir a data atual do sistema...
-pause > nul
-
-date
+echo date 
+echo.
+echo.
+echo Porém ao executar o comando e apertar a tecla "Enter" deixando o campo em branco a data não será alterada
 
 echo.
-echo Data exibida! Pressione qualquer tecla para continuar...
+echo Pressione qualquer tecla para continuar...
 pause > nul
 cls
 
@@ -148,16 +147,17 @@ echo Pressione qualquer tecla para continuar...
 pause > nul
 cls
 
-echo Ao exibir a hora e apertar a tecla "Enter" será pedida uma nova hora!
-echo é só clicar "Enter" novamente que a hora continuará igual
-echo.
-echo Pressione qualquer tecla para exibir a hora atual do sistema...
-pause > nul
 
-time
+echo Comando não será executado, pois a hora do computador pode ser alterada
+echo.
+echo time
+echo.
+echo.
+echo Porém ao executar o comando e apertar a tecla "Enter" deixando o campo em branco a hora não será alterada
+
 
 echo.
-echo Hora exibida! Pressione qualquer tecla para continuar...
+echo Pressione qualquer tecla para continuar...
 pause > nul
 cls
 
@@ -188,8 +188,13 @@ cls
 echo Pressione qualquer tecla para exibir informações detalhadas do sistema...
 pause > nul
 
+echo.
+echo systeminfo
+echo.
+
 systeminfo
 
+echo.
 echo.
 echo Informações exibidas! Pressione qualquer tecla para continuar...
 pause > nul
@@ -225,6 +230,10 @@ pause > nul
 cls
 
 echo.
+echo cls
+echo.
+
+echo.
 echo Tela limpa! Pressione qualquer tecla para continuar...
 pause > nul
 cls
@@ -256,6 +265,10 @@ cls
 echo Pressione qualquer tecla para listar os processos em execução...
 pause > nul
 
+echo.
+echo tasklist
+echo.
+
 tasklist
 
 echo.
@@ -280,22 +293,20 @@ echo Este é o help do Windows sobre o comando taskkill:
 echo.
 taskkill /?
 
-
+echo.
+echo O comando não será executado mas um exemplo será execultado
+echo.
 echo Pressione qualquer tecla para continuar...
 pause > nul
 cls
 
-echo *ABRA O ARQUIVO ***BLOCO DE NOTAS ou NOTEPAD*** e Pressione qualquer tecla para continuar...
-pause > nul
-cls
-
-echo Pressione qualquer tecla para encerrar um processo (exemplo: bloco de notas)...
-pause > nul
-
-taskkill /F /IM notepad.exe
+echo Exemplo de encerramento do processo do programa "bloco de notas"
+echo.
+echo taskkill /F /IM notepad.exe
+echo.
 
 echo.
-echo Processo encerrado! Pressione qualquer tecla para continuar...
+echo Pressione qualquer tecla para continuar...
 pause > nul
 cls
 

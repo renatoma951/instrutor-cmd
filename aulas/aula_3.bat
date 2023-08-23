@@ -43,7 +43,8 @@ echo.
 
 echo Pressione qualquer tecla para criar um arquivo de texto chamado "output.txt" com o texto "Exemplo de output":
 pause > nul
-
+echo.
+echo "echo Exemplo de output > output.txt" (sem aspas)
 echo Exemplo de output > output.txt
 
 echo.
@@ -67,14 +68,20 @@ copy /?
 
 echo.
 echo.
+mkdir c
+echo Criamos a pasta "c"
+echo.
 echo Pressione qualquer tecla para continuar...
 pause > nul
 cls
 
-echo Pressione qualquer tecla para copiar o arquivo "output.txt" para a pasta "C:\":
+echo Pressione qualquer tecla para copiar o arquivo "output.txt" para a pasta "c":
 pause > nul
 
-copy output.txt C:\
+echo.
+echo copy output.txt c
+echo.
+copy output.txt c
 
 echo.
 echo Arquivo copiado! Pressione qualquer tecla para continuar...
@@ -96,18 +103,24 @@ echo.
 xcopy /?
 
 echo.
+mkdir d
+echo Criamos a pasta "d"
+echo.
 echo.
 echo Pressione qualquer tecla para continuar...
 pause > nul
 cls
 
-echo Pressione qualquer tecla para copiar o arquivo "output.txt" para a pasta "C:\Windows":
+echo Pressione qualquer tecla para copiar o arquivo "output.txt" para a pasta "d":
 pause > nul
 
-xcopy /E /I output.txt C:\Windows
+echo.
+echo xcopy output.txt d
+echo.
+xcopy output.txt d
 
 echo.
-echo Pasta copiada! Pressione qualquer tecla para continuar...
+echo arquivo copiado! Pressione qualquer tecla para continuar...
 pause > nul
 cls
 
@@ -135,6 +148,9 @@ cls
 echo Pressione qualquer tecla para renomear o arquivo "output.txt" para "output.txt_novo":
 pause > nul
 
+echo.
+echo ren output.txt output.txt_novo
+echo.
 ren output.txt output.txt_novo
 
 echo.
@@ -163,15 +179,34 @@ echo Pressione qualquer tecla para continuar...
 pause > nul
 cls
 
-echo Pressione qualquer tecla para excluir os arquivos "output.txt_novo", "C:\output.txt", "C:\Windows\output.txt":
+echo Pressione qualquer tecla para excluir os arquivos "output.txt_novo", "c\output.txt", "d\output.txt":
 pause > nul
+echo.
 
-del output.txt_novo
-del C:\output.txt
-del C:\Windows\output.txt
+echo del output.txt_novo
+echo del c\output.txt
+echo del d\output.txt
 
 echo.
-echo Arquivos excluídos e Aula concluída. Pressione qualquer tecla para voltar ao menu......
+
+del output.txt_novo
+del c\output.txt
+del d\output.txt
+
+echo.
+echo.
+echo Pressione qualquer tecla para excluir as pastas utilizando o comando rmdir...
+pause > nul
+cls
+
+rmdir c
+rmdir d
+
+echo.
+echo rmdir c
+echo rmdir d
+echo.
+echo Pastas e arquivos excluídos! Aula concluída. Pressione qualquer tecla para voltar ao menu......
 pause > nul
 cls
 
