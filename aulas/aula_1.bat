@@ -234,6 +234,5 @@ echo.
 echo Aula concluída. Pressione qualquer tecla para voltar ao menu
 pause > nul
 
-cd C:\Users\Administrator\Desktop\instrutor-cmd
 cls
 call executar_instrutor.bat
